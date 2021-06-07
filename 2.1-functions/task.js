@@ -2,7 +2,6 @@
 
 function getSolutions (a, b, c) {
     let d = b**2 - 4*a*c;
-
     if (d < 0) {
         return ("D:" + d +", roots:");
     }
@@ -31,8 +30,6 @@ function showSloutionsMessage(a, b, c) {
         console.log("Уравнение имеет два корня. X₁ = "+ result[1]+", X₂ = "+ result[2]);
     }
 }
-console.log(showSloutionsMessage(1,2,3));
-
 
 function getAverageScore(data) {
 
@@ -160,4 +157,4 @@ function getAverageScore(data) {
         marks[0] = average;
     }
     return getAverageMark;
-}    
+}

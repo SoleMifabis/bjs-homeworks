@@ -10,8 +10,8 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
     if (typeof amount !== "number" && amount < 0) {
         return console.log(`Параметр "общая стоимость" содержит неправильное значение ${amount}`);
     };
-    if (data < new Date()) {
-        return console.log(`Параметр "дата" содержит неправильное значение ${data}`);
+    if (date < new Date()) {
+        return console.log(`Параметр "дата" содержит неправильное значение ${date}`);
     };
 
     let body = amount - contribution;
